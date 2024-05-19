@@ -1,0 +1,15 @@
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 3rem;
+}
+
+p {
+  padding: 1rem;
+}

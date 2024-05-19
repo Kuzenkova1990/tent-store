@@ -1,0 +1,13 @@
+<h1>{{tent?.name}}</h1>
+<section class="details-container">
+    <div class="details-content">
+        <p>Цвет: {{tent?.color}}</p>
+        <p>Количество мест: {{tent?.numberOfPlaces}}</p>
+        <p>Размеры, см: {{tent?.size}}</p>
+        <p>Материал тента: {{tent?.comound}}</p>
+        <p>Масса, кг: {{tent?.weight}}</p>
+        <p>Цена: {{tent?.prise | currency: 'RUB '}}</p>
+
+    </div>
+    <img src="{{tent?.photo}}" alt="Photo{{tent?.name}}">
+</section>
