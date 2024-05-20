@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../auth.service';
+import { MenuComponent } from '../menu/menu.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, MenuComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })

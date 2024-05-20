@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        <li *ngFor="let menuItem of menuItems" (click)="toggleMenuItem(menuItem)">{{menuItem.label}}
+            <ul *ngIf="menuItem.isOpen" >
+            <li *ngFor="let subItem of menuItem.items" ><a [routerLink]="subItem.link" (click)="keepMenuOpen()" >{{subItem.label}}</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
